@@ -12,6 +12,8 @@ import angularMaterial from 'angular-material';
 import angularUIRouter from '@uirouter/angularjs';
 import angularMessages from 'angular-messages';
 import angularResource from 'angular-resource';
+import ngSanitize from 'angular-sanitize';
+
 
 import utils from './utils';
 import noPressConfig from './on-config';
@@ -33,6 +35,8 @@ export const noPressModule = angular.module('noPress', [
         angularUIRouter, 
         angularMessages, 
         angularResource,
+        ngSanitize,
+        
         apiModule, 
         CommonModule,
         main,

@@ -29,7 +29,9 @@ class LoaleService{
 
     setAvailableLang(langList) {
         this.languages = langList;
-/*        if(!langList.length){
+/*        
+        // keep for manual testing
+        if(!langList.length){
         	this.languages = langList = [
         		{
 					en: {
@@ -58,9 +60,6 @@ class LoaleService{
 
             this.setActiveLang(lang || langList[0]);
         }
-
-console.log('languages -- ', this.languages)
-
     };
 
     setActiveLang(lang) {

@@ -2,3 +2,4 @@ dist/
 node_modules/
 .history/*
 .vscode/*
+package-lock.json

@@ -1,8 +1,6 @@
 class Json2htmlController {
     constructor() {
         var vm = this;
-
-
     }
 }
 
@@ -13,7 +11,6 @@ class json2htmlDirective {
         this.$compile = deps[0];
         this.json2htmlService = deps[1];
 
-        this.template = '';
         this.controller = Json2htmlController;
         this.restrict = 'E';
         this.require = 'ngModel';
@@ -28,12 +25,10 @@ class json2htmlDirective {
                 //h = $(document.createElement('div'));
                 element.html('');
                 this.json2htmlService.parse(ngModel.$modelValue, element);
-                //console.log('html from json: ', h);
             } else {
 
             }
             this.$compile(element.contents())(scope);
-            console.log('modelValue -- ', newVal)
         });
     }    
 

@@ -31,7 +31,6 @@ class MainController {
 
             this.$scope.pageWideSpinner.spin = false;
         });
-        console.log(this)
     }
 
 

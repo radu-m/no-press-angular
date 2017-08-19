@@ -1,3 +1,7 @@
+/**
+* TODO: brak up this service in multiple files and change the data model
+*/
+
  class StashService{
 	constructor(...deps){
 		this.$q = deps[0];
@@ -100,9 +104,7 @@
         var acLangCode = this.localeService.getActiveLangCode();
 
         this.addLangKeys('page');
-console.log('acLangCode -- ', this.localeService.getActiveLangCode())
 
-console.log('stash -- ', this.stash)
         if (this.stash.page[acLangCode][slug]) {
             return $q.when(this.stash.page[acLangCode][slug]);
         }
@@ -520,7 +522,6 @@ console.log('stash -- ', this.stash)
     addLangKeys(keyChain) {
     	var self = this;
         angular.forEach(this.localeService.languages, function (lang, langKey) {
-        	console.log('self -- ', keyChain)
             self.putDataToStash(keyChain + '.' + langKey, {});
         })
     }

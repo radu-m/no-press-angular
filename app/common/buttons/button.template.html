@@ -1,0 +1,10 @@
+<button data-ng-class="cssClass"
+    data-ng-click="this.vm[actionName](actionParams, $event)">
+
+    <a data-ng-href="{{link}}"
+        data-ng-if="link">
+        <span>{{buttonLabel}}</span>
+    </a>
+
+    <span data-ng-if="!link">{{buttonLabel}}</span>
+</button>

@@ -1,0 +1,34 @@
+<div data-ng-class="vm.cssClass">
+
+    <div class="box-header">
+        <div class="text-box-image"
+             data-ng-style="vm.cssStyle"
+             data-ng-if="vm.imgSrc">
+
+            <a data-ng-if="vm.imgHref.href"
+               target="_blank"
+               data-ng-href="{{vm.imgHref.href}}"></a>
+
+        </div>
+
+        <div class="text-box-title">
+            <h3>
+                {{vm.boxTitle}}
+            </h3>
+
+            <p>{{vm.boxSubtitle}}</p>
+        </div>
+    </div>
+
+    <div class="box-content" data-ng-bind-html="vm.boxContent">
+    </div>
+
+    <div class="box-footer"
+         data-ng-if="vm.boxExtraLink">
+        <a class="mon-btn"
+           data-ng-if="vm.boxExtraLink.href"
+           data-ng-href="{{vm.boxExtraLink.href}}">
+            {{vm.boxExtraLink.title}}
+        </a>
+    </div>
+</div>

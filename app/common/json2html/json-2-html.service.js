@@ -1,6 +1,6 @@
 export class Json2htmlService {
 
-	constructor() {
+	constructor(...deps) {
         this.attrsBlackList = {
             img: ['width', 'height']
         };
@@ -60,4 +60,5 @@ export class Json2htmlService {
 	}
 }
 
+Json2htmlService.factory.$inject = [];
 export default Json2htmlService.factory;
