@@ -11,7 +11,7 @@
     "prod": "webpack -p"
   },
   "dependencies": {
-    "angular": "~1.6.5",
+    "angular": "~1.8.0",
     "angular-animate": "~1.6.5",
     "angular-aria": "~1.6.5",
     "angular-material": "^1.1.4",
